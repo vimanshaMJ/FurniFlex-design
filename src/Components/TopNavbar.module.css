@@ -35,16 +35,20 @@
 .phoneIcon {
   margin: 0 5px;
 }
-
 .socielIcon {
   display: inline-flex;
-  width: 35px;
-  padding: 10px;
+  width: 40px;
+  padding: 8px;
+  background-color: transparent;
+  border: #d2b783 1px solid;
+  border-radius: 50px;
+  margin: 0 5px;
 }
 .socielIcon:hover {
-  background-color: #d2b783;
-  border-radius: 50%;
+  border: #d2b783;
+  padding: 4px;
 }
+
 Image {
   margin: 0;
   padding: 0;

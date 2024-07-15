@@ -37,19 +37,19 @@ export default function MainNavbar() {
                 <Nav.Link href="#home" className={classes.navLink}>
                   Home
                 </Nav.Link>
-                <Nav.Link href="#home" className={classes.navLink}>
+                <Nav.Link href="#products" className={classes.navLink}>
                   Products
                 </Nav.Link>
-                <Nav.Link href="#home" className={classes.navLink}>
+                <Nav.Link href="#categories" className={classes.navLink}>
                   Categories
                 </Nav.Link>
-                <Nav.Link href="#home" className={classes.navLink}>
+                <Nav.Link href="#aboutus" className={classes.navLink}>
                   About Us
                 </Nav.Link>
-                <Nav.Link href="#home" className={classes.navLink}>
+                <Nav.Link href="#contactus" className={classes.navLink}>
                   Contact Us
                 </Nav.Link>
-                <Nav.Link href="#home" className={classes.navLink}>
+                <Nav.Link href="#blog" className={classes.navLink}>
                   Blog
                 </Nav.Link>
               </Nav>
