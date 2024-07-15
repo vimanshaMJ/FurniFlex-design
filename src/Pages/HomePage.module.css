@@ -2,3 +2,8 @@
   height: 500px;
   background-color: #2d5356;
 }
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
