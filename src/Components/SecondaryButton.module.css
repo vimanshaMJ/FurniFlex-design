@@ -1,4 +1,5 @@
 .secondaryButton {
+  background-color: #426467;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 30px;
