@@ -1,5 +1,7 @@
 .container {
+  position: static;
   background-color: #2d5356;
+  font-size: 1.1rem;
 }
 .logo1 {
   width: 20px;
@@ -12,7 +14,7 @@
   color: white !important;
   position: relative;
   padding-bottom: 5px;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 .navLink:hover::after {
@@ -38,13 +40,41 @@
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
 .icon {
   color: white;
   background-color: transparent;
   border: none;
   padding: 0;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .icon:hover {
   background-color: transparent;
+  border: none;
+}
+.icon:focus {
+  background-color: transparent;
+  border: none;
+}
+@media (max-width: 768px) {
+  .icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .icons {
+    margin-top: 0;
+  }
+}
+@media (max-width: 408px) {
+  .icons {
+    margin: 20px auto 0 auto;
+  }
 }

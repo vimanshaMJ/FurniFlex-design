@@ -1,8 +1,10 @@
 .topNavbarContainer {
+  position: static;
   display: flex;
   align-items: center;
   background-color: #d09423;
   padding: 10px 0;
+  font-size: 1.1rem;
 }
 .topRow {
   display: flex;
@@ -21,9 +23,19 @@
   color: white;
   margin: 0 5px;
 }
-.text {
+.text1 {
   margin: 0;
 }
+.text2 {
+  display: flex;
+  margin: 0;
+  justify-content: right;
+  align-items: center;
+}
+.phoneIcon {
+  margin: 0 5px;
+}
+
 .socielIcon {
   display: inline-flex;
   width: 35px;
@@ -53,5 +65,8 @@ a {
   }
   .firstCol {
     display: inline;
+  }
+  .text2 {
+    justify-content: center;
   }
 }

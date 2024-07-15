@@ -14,7 +14,7 @@ export default function MainNavbar() {
 
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <div className="col-lg-2 col-md-4">
+          <div className="col-lg-2 col-md-4 col-sm-6">
             <Navbar.Brand
               href=""
               className={classes.logoText}
@@ -27,7 +27,10 @@ export default function MainNavbar() {
             </Navbar.Brand>
           </div>
 
-          <div className="col-lg-8 col-md-4" style={{ textAlign: "center" }}>
+          <div
+            className="col-lg-8 col-md-4 col-sm-6"
+            style={{ textAlign: "center" }}
+          >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mx-auto">
@@ -53,7 +56,7 @@ export default function MainNavbar() {
             </Navbar.Collapse>
           </div>
 
-          <div className="col-lg-2 col-md-4" style={{ textAlign: "right" }}>
+          <div className={`col-lg-2 col-md-4 col-sm-12 ${classes.icons}`}>
             <Button className={classes.icon}>
               <span class="material-icons">search</span>
             </Button>
