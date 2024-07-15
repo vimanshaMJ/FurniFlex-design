@@ -1,9 +1,11 @@
 import React from "react";
+import classes from "./HomePage.module.css";
+import MainNavbar from "../Components/Navbar";
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Hello world!</h1>
+    <div className={classes.navbarContainer}>
+      <MainNavbar />
     </div>
   );
 };
