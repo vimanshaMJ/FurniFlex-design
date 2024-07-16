@@ -9,6 +9,7 @@ import truck from "../Images/truck.png";
 import bag from "../Images/bag.png";
 import wheel from "../Images/wheel.png";
 import returns from "../Images/returns.png";
+import ImageSlider from "../Components/ImageSlider";
 
 const HomePage = () => {
   return (
@@ -60,7 +61,9 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className={`col-md-6 ${classes.imgCol}`}></div>
+            <div className={`col-md-6 ${classes.imgCol}`}>
+              <ImageSlider />
+            </div>
           </div>
         </div>
       </div>
