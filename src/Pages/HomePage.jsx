@@ -13,6 +13,9 @@ import ImageSlider from "../Components/ImageSlider";
 import table from "../Images/table.png";
 import chair from "../Images/chair.png";
 import lamp from "../Images/lamp.png";
+import CategoriesSlider from "../Components/CategoriesSlider";
+import NextArrow from "../Components/CategoriesSlider";
+import PrevArrow from "../Components/CategoriesSlider";
 
 const HomePage = () => {
   return (
@@ -216,6 +219,10 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={classes.categorySection}>
+        <CategoriesSlider />
       </div>
     </div>
   );

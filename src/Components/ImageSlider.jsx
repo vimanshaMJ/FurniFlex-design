@@ -26,7 +26,7 @@ export default function ImageSlider() {
 
   const [rotateState, setRotateState] = React.useState(0);
 
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     speed: 500,
