@@ -6,7 +6,7 @@ export default function SecondaryButton({ buttonText, buttonIcon, className }) {
   return (
     <div>
       <Button
-        variant="outline-light"
+        variant="outline-dark"
         className={`${classes.secondaryButton} ${className}`}
       >
         {buttonIcon && <span>{buttonIcon}</span>}

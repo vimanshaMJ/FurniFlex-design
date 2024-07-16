@@ -9,6 +9,7 @@
   font-size: 1.2rem;
   transition: all 0.3s;
   align-items: center;
+  justify-content: center;
 }
 .primaryButton:hover {
   background-color: transparent;
