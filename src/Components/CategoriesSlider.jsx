@@ -8,6 +8,7 @@ import cat5 from "../Images/cat5.png";
 import { Image } from "react-bootstrap";
 import classes from "./CategoriesSlider.module.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import "./SlickDots.css";
 
 export default function CategoriesSlider() {
   const NextArrow = ({ onClick }) => {
