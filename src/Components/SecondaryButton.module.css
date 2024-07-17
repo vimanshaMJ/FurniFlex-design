@@ -1,5 +1,6 @@
 .secondaryButton {
   background-color: white;
+  width: fit-content;
   border: rgb(208, 207, 207) 1px solid;
   cursor: pointer;
   transition: all 0.3s ease;

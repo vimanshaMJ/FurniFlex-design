@@ -14,14 +14,70 @@ import table from "../Images/table.png";
 import chair from "../Images/chair.png";
 import lamp from "../Images/lamp.png";
 import CategoriesSlider from "../Components/CategoriesSlider";
-import NextArrow from "../Components/CategoriesSlider";
-import PrevArrow from "../Components/CategoriesSlider";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import LikeButton from "../Components/LikeButton";
+import cart from "../Images/cart.png";
+import product1 from "../Images/product1.png";
+import product2 from "../Images/product2.png";
+import product3 from "../Images/product3.png";
+import product4 from "../Images/product4.png";
+import product5 from "../Images/product5.png";
+import product6 from "../Images/product6.png";
 
 const HomePage = () => {
+  const products = [
+    {
+      key: 1,
+      discount: "-20%",
+      image: product1,
+      title: "Luxe Lounge Sofa",
+      price: "$235.99",
+    },
+    {
+      key: 2,
+      discount: "-10%",
+      image: product2,
+      title: "Comfort Haven Sofa",
+      price: "$250.99",
+    },
+    {
+      key: 3,
+      discount: "-25%",
+      image: product3,
+      title: "Round Wicker chair",
+      price: "$180.99",
+    },
+    {
+      key: 4,
+      discount: "-10%",
+      image: product4,
+      title: "Teal ottoman",
+      price: "$125.99",
+    },
+    {
+      key: 5,
+      discount: "-30%",
+      image: product5,
+      title: "White fleece throw pillow",
+      price: "$99.99",
+    },
+    {
+      key: 6,
+      discount: "-20%",
+      image: product6,
+      title: "Pillows on bed set",
+      price: "$235.99",
+    },
+  ];
+
   return (
+    // Navbar section
     <div className={classes.mainContainer}>
       <MainNavbar />
 
+      {/* Hero Section */}
       <div className={classes.heroSection}>
         <div className="container">
           <div className={`row ${classes.herofirstRow}`}>
@@ -77,6 +133,7 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* First Section */}
       <div className={classes.firstSection}>
         <div className="container">
           <div className="row">
@@ -221,8 +278,85 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* Category Section */}
       <div className={classes.categorySection}>
         <CategoriesSlider />
+      </div>
+
+      {/* Products Section */}
+      <div className={classes.productSection}>
+        <div className="container">
+          <div className={`row ${classes.productsTitleRow}`}>
+            <div className={`col-4 ${classes.titleCol}`}>
+              <h1>Trending products for you!</h1>
+            </div>
+            <div className={`col-4 ${classes.btnCol}`}>
+              <PrimaryButton
+                buttonText="View All Product"
+                buttonIcon={
+                  <span
+                    className={`material-symbols-outlined ${classes.buttonIcon}`}
+                  >
+                    line_end_arrow
+                  </span>
+                }
+                className={classes.viewAllBtn}
+              />
+            </div>
+          </div>
+
+          <div className="row">
+            <Navbar
+              expand="lg"
+              className={`bg-body-tertiary ${classes.productsBar}`}
+            >
+              <Container style={{ padding: "0" }}>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav className="me-auto">
+                    <Nav.Link href="#bedroom" className={classes.navLink}>
+                      Bed Room
+                    </Nav.Link>
+                    <Nav.Link href="#livingroom" className={classes.navLink}>
+                      Living Room
+                    </Nav.Link>
+                    <Nav.Link href="#diningroom" className={classes.navLink}>
+                      Dining Room
+                    </Nav.Link>
+                    <Nav.Link href="#outdoor" className={classes.navLink}>
+                      Outdoor
+                    </Nav.Link>
+                    <Nav.Link href="#indoor" className={classes.navLink}>
+                      Indoor
+                    </Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
+          </div>
+
+          <div className={`row ${classes.productCardRow}`}>
+            {products.map((product) => (
+              <div className={`col-4 ${classes.productCardCol}`}>
+                <div className={classes.cardHeader}>
+                  <p className={classes.productDiscount}>{product.discount}</p>
+                  <LikeButton />
+                </div>
+
+                <div className={classes.cardBody}>
+                  <Image src={product.image} className={classes.productImg} />
+                </div>
+
+                <div className={classes.cardFooter}>
+                  <p className={classes.productTitle}>
+                    {product.title} <br /> {product.price}
+                  </p>
+                  <Image src={cart} className={classes.cartIcon} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
