@@ -32,13 +32,7 @@ export default function SaleCard() {
           <div className={`col ${classes.saleCardcol2}`}>
             <h4 className={classes.saleCardTitle}>{item.title}</h4>
             <PrimaryButton
-              buttonIcon={
-                <span
-                  className={`material-symbols-outlined ${classes.buttonIcon}`}
-                >
-                  line_end_arrow
-                </span>
-              }
+              buttonIcon={true}
               className={classes.saleCardButton}
             />
           </div>

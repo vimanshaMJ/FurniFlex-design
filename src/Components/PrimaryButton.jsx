@@ -10,7 +10,11 @@ export default function PrimaryButton({ buttonText, buttonIcon, className }) {
         className={`${classes.primaryButton} ${className}`}
       >
         {buttonText}
-        {buttonIcon && <span>{buttonIcon}</span>}
+        {buttonIcon && (
+          <span className={`material-symbols-outlined ${classes.buttonIcon}`}>
+            line_end_arrow
+          </span>
+        )}
       </Button>
     </div>
   );

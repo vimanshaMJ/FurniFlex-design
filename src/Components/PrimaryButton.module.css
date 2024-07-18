@@ -17,3 +17,8 @@
   border: #d09423 solid 2px;
   color: white;
 }
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}

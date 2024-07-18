@@ -47,11 +47,6 @@
   color: #f5f5f5a7;
   border-bottom: #f5f5f5a7 2px solid;
 }
-.buttonIcon {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-}
 .HeroLastRow {
   margin-top: 70px;
 }
@@ -317,9 +312,84 @@
   font-weight: 400;
   margin: 0 20px;
 }
-
 .saleCol2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* Offer section */
+.offerSection {
+  margin: 5% 0;
+}
+.offerCol1 {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  border: solid;
+  border-radius: 30px;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../Images/offerimg.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../Images/offerimg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.offerRow1 {
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+}
+.offerTxt {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  width: fit-content;
+}
+.offerBtn {
+  color: #d09423 !important;
+  margin: 0 !important;
+  padding: 0 4% !important;
+  border: none !important;
+}
+.offerRow2 {
+  align-items: center;
+  padding-right: 30%;
+}
+.offerHeading {
+  font-size: 3rem;
+}
+.bestDealBtn {
+  margin: 20px 0 !important;
+}
+
+.offerCol2 {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5% 15% 5% 5%;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+}
+.regularText {
+  color: rgb(68, 68, 68);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.codeText {
+  color: rgb(138, 135, 135);
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+.RegOfferBtn {
+  background-color: #2d5356 !important;
+  margin: 10px 0 !important;
+}
+.RegOfferBtn:hover {
+  background-color: white !important;
+  color: black !important;
+  border: #2d5356 2px solid !important;
 }

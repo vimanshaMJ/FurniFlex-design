@@ -48,16 +48,7 @@ const HomePage = ({ products }) => {
               </p>
 
               <div className={classes.btnRow}>
-                <PrimaryButton
-                  buttonText="Shop Now"
-                  buttonIcon={
-                    <span
-                      className={`material-symbols-outlined ${classes.buttonIcon}`}
-                    >
-                      line_end_arrow
-                    </span>
-                  }
-                />
+                <PrimaryButton buttonText="Shop Now" buttonIcon={true} />
                 <Link className={classes.heroLink}>Follow Instagram </Link>
               </div>
 
@@ -244,13 +235,7 @@ const HomePage = ({ products }) => {
             <div className={`col-4 ${classes.btnCol}`}>
               <PrimaryButton
                 buttonText="View All Product"
-                buttonIcon={
-                  <span
-                    className={`material-symbols-outlined ${classes.buttonIcon}`}
-                  >
-                    line_end_arrow
-                  </span>
-                }
+                buttonIcon={true}
                 className={classes.viewAllBtn}
               />
             </div>
@@ -336,13 +321,7 @@ const HomePage = ({ products }) => {
                   </p>
                   <PrimaryButton
                     buttonText="Shop Now"
-                    buttonIcon={
-                      <span
-                        className={`material-symbols-outlined ${classes.buttonIcon}`}
-                      >
-                        line_end_arrow
-                      </span>
-                    }
+                    buttonIcon={true}
                     className={classes.shopNowBtn}
                   />
                 </div>
@@ -351,6 +330,52 @@ const HomePage = ({ products }) => {
 
             <div className={`col-lg-4 col-md-8 ${classes.saleCol2}`}>
               <SaleCard />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Offer section */}
+      <div className={classes.offerSection}>
+        <div className="container">
+          <div className="row" style={{ justifyContent: "space-between" }}>
+            <div className={`col-md-6 ${classes.offerCol1}`}>
+              <div className={`row ${classes.offerRow1}`}>
+                <p className={classes.offerTxt}>Exclusive Offer</p>
+                <SecondaryButton
+                  buttonText="15% OFF"
+                  className={classes.offerBtn}
+                />
+              </div>
+
+              <div className={`row ${classes.offerRow2}`}>
+                <h1 className={classes.offerHeading}>
+                  Best Online Deals, Free Stuff
+                </h1>
+                <p className={classes.offerTxt}>
+                  Only on this week... Don't Miss
+                </p>
+                <PrimaryButton
+                  buttonText="Get Best Deal"
+                  buttonIcon={true}
+                  className={classes.bestDealBtn}
+                />
+              </div>
+            </div>
+
+            <div className={`col-md-6 ${classes.offerCol2}`}>
+              <p className={classes.regularText}>Regular Offer</p>
+              <h1 className={classes.offerHeading}>
+                10% cash-back on personal care
+              </h1>
+              <p className={classes.codeText}>
+                Max cashback: $12. Code: CADHL837
+              </p>
+              <PrimaryButton
+                buttonText="Shop Now"
+                buttonIcon={true}
+                className={classes.RegOfferBtn}
+              />
             </div>
           </div>
         </div>
