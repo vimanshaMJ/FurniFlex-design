@@ -18,6 +18,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import ProductCard from "../Components/ProductCard";
+import CountdownTimer from "../Components/CountdownTimer";
+import sale1 from "../Images/sale1.png";
+import SaleCard from "../Components/SaleCard";
 
 const HomePage = ({ products }) => {
   return (
@@ -284,6 +287,72 @@ const HomePage = ({ products }) => {
           </div>
 
           <ProductCard products={products} />
+        </div>
+      </div>
+
+      {/* Sale section */}
+      <div className={classes.saleSection}>
+        <div className="container">
+          <div className={`row ${classes.salesRow}`}>
+            <div className={`col-lg-8 col-md-12 ${classes.saleCol1}`}>
+              <div className={`row ${classes.saleRow1}`}>
+                <div className={`col-7 ${classes.saleTitleCol}`}>
+                  <h1 className={classes.saleTitle}>Flash Sale!</h1>
+                  <p className={classes.saleDesc}>
+                    Act fast to grab incredible deals on select furniture pieces
+                    in our limited-time flash sale.
+                  </p>
+                </div>
+
+                <div className={`col-5 ${classes.saleTimeCol}`}>
+                  <p className={classes.timerTitle}>
+                    <span
+                      class="material-symbols-outlined"
+                      style={{ marginRight: "5px" }}
+                    >
+                      timer
+                    </span>
+                    End Time
+                  </p>
+                  <CountdownTimer hours={24} minutes={0} seconds={0} />
+                </div>
+              </div>
+
+              <div className={`row ${classes.saleRow2}`}>
+                <div className={`col-6 ${classes.saleImgCol}`}>
+                  <Image src={sale1} className={classes.saleImg1} />
+                  <h3 style={{ display: "flex", alignItems: "center" }}>
+                    $599 <span className={classes.crossedPrice}>$799</span>
+                  </h3>
+                </div>
+
+                <div className={`col-6 ${classes.saleChairCol}`}>
+                  <h3 className={classes.saleChairTitle}>
+                    Vintage Leather Armchair
+                  </h3>
+                  <p className={classes.saleChairDesc}>
+                    Bring a touch of retro charm to your home with this vintage
+                    leather armchair. Sturdy construction ensures durability.
+                  </p>
+                  <PrimaryButton
+                    buttonText="Shop Now"
+                    buttonIcon={
+                      <span
+                        className={`material-symbols-outlined ${classes.buttonIcon}`}
+                      >
+                        line_end_arrow
+                      </span>
+                    }
+                    className={classes.shopNowBtn}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className={`col-lg-4 col-md-8 ${classes.saleCol2}`}>
+              <SaleCard />
+            </div>
+          </div>
         </div>
       </div>
     </div>

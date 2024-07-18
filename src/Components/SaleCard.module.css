@@ -1,0 +1,42 @@
+.saleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.saleCardRow {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 8%;
+  border-radius: 30px;
+}
+.saleCardcol1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.saleImg2 {
+  height: 120px;
+  width: fit-content;
+}
+
+.saleCardcol2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.saleCardTitle {
+  color: rgb(68, 68, 68);
+}
+.saleCardButton {
+  padding: 20px !important;
+}
+.saleCardButton:hover {
+  color: black !important;
+}
+.buttonIcon {
+  display: flex;
+  align-items: center;
+}

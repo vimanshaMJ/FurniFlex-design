@@ -1,0 +1,16 @@
+.timerRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px;
+  padding: 2px 10px;
+  background-color: white;
+  color: rgb(114, 113, 113);
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
