@@ -57,7 +57,7 @@ export default function CommentsSlider() {
     <div className="container">
       <div className="row">
         <h1 className={classes.commentsHeading}>
-          Don't take our word, see what clients say
+          Don't take our word, see what our clients say
         </h1>
       </div>
 
