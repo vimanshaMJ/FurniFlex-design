@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Image } from "react-bootstrap";
 import Slider from "react-slick";
 import classes from "./ImageSlider.module.css";
@@ -24,7 +24,7 @@ export default function ImageSlider() {
     );
   };
 
-  const [rotateState, setRotateState] = React.useState(0);
+  const [rotateState, setRotateState] = useState(0);
 
   const settings = {
     dots: false,

@@ -21,6 +21,7 @@ import ProductCard from "../Components/ProductCard";
 import CountdownTimer from "../Components/CountdownTimer";
 import sale1 from "../Images/sale1.png";
 import SaleCard from "../Components/SaleCard";
+import CommentsSlider from "../Components/CommentsSlider";
 
 const HomePage = ({ products }) => {
   return (
@@ -379,6 +380,11 @@ const HomePage = ({ products }) => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Comments section */}
+      <div className={classes.commentSection}>
+        <CommentsSlider />
       </div>
     </div>
   );

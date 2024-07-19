@@ -320,7 +320,7 @@
 
 /* Offer section */
 .offerSection {
-  margin: 5% 0;
+  margin-top: 5%;
 }
 .offerCol1 {
   width: 49%;
@@ -329,8 +329,6 @@
   padding: 5%;
   border: solid;
   border-radius: 30px;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("../Images/offerimg.jpg"); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("../Images/offerimg.jpg");
   background-size: cover;
@@ -392,4 +390,9 @@
   background-color: white !important;
   color: black !important;
   border: #2d5356 2px solid !important;
+}
+
+/* Comments section */
+.commentSection {
+  margin: 5% 0;
 }
