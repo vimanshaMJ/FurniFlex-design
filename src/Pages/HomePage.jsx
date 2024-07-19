@@ -23,6 +23,7 @@ import sale1 from "../Images/sale1.png";
 import SaleCard from "../Components/SaleCard";
 import CommentsSlider from "../Components/CommentsSlider";
 import PostCard from "../Components/PostCard";
+import QASection from "../Components/QAAccordion";
 
 const HomePage = ({ products }) => {
   return (
@@ -405,6 +406,17 @@ const HomePage = ({ products }) => {
           </div>
 
           <PostCard />
+        </div>
+      </div>
+
+      {/* Q&A section */}
+      <div className={classes.qaSection}>
+        <div className="container">
+          <div className={`row ${classes.qaHeading}`}>
+            <h1>Got Questions? We've Got Answers!</h1>
+          </div>
+
+          <QASection />
         </div>
       </div>
     </div>
