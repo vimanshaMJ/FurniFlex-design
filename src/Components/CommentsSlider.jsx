@@ -65,14 +65,14 @@ export default function CommentsSlider() {
         {comments.map((comment, id) => (
           <div key={id} className={classes.comments}>
             <div className={`row ${classes.commentContainer}`}>
-              <div className={`col-6 ${classes.clientImg}`}>
+              <div className={`col-5 ${classes.clientImg}`}>
                 <Image
                   src={comment.image}
                   alt="client"
                   className={classes.img}
                 />
               </div>
-              <div className={`col-6 ${classes.clientText}`}>
+              <div className={`col-7 ${classes.clientText}`}>
                 <p> {comment.comment} </p>
                 <hr />
                 <p className={classes.clientName}>

@@ -22,6 +22,7 @@ import CountdownTimer from "../Components/CountdownTimer";
 import sale1 from "../Images/sale1.png";
 import SaleCard from "../Components/SaleCard";
 import CommentsSlider from "../Components/CommentsSlider";
+import PostCard from "../Components/PostCard";
 
 const HomePage = ({ products }) => {
   return (
@@ -385,6 +386,26 @@ const HomePage = ({ products }) => {
       {/* Comments section */}
       <div className={classes.commentSection}>
         <CommentsSlider />
+      </div>
+
+      {/* Blog section */}
+      <div className={classes.blogSection}>
+        <div className="container">
+          <div className={`row ${classes.blogHeading}`}>
+            <div className={`col-6 ${classes.headCol}`}>
+              <h1>Explore Our Latest Blog</h1>
+            </div>
+            <div className={`col-6 ${classes.btnCol}`}>
+              <PrimaryButton
+                buttonText="View All Posts"
+                buttonIcon={true}
+                className={classes.viewAllBtn}
+              />
+            </div>
+          </div>
+
+          <PostCard />
+        </div>
       </div>
     </div>
   );

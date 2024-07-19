@@ -396,3 +396,14 @@
 .commentSection {
   margin: 5% 0;
 }
+
+/* Blog section */
+.blogSection {
+  margin: 8% 0 5% 0;
+}
+.blogHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4%;
+}
