@@ -24,6 +24,8 @@ import SaleCard from "../Components/SaleCard";
 import CommentsSlider from "../Components/CommentsSlider";
 import PostCard from "../Components/PostCard";
 import QASection from "../Components/QAAccordion";
+import newsimg from "../Images/newsimg.png";
+import { Input, TextField } from "@mui/material";
 
 const HomePage = ({ products }) => {
   return (
@@ -417,6 +419,42 @@ const HomePage = ({ products }) => {
           </div>
 
           <QASection />
+        </div>
+      </div>
+
+      {/* Newsletter section */}
+      <div className={classes.newsLetterSection}>
+        <div className="container">
+          <div className={`row ${classes.newsLetterRow}`}>
+            <div className={`col-md-6 ${classes.newsLetterCol}`}>
+              <h1>Subscribe To Our Newsletter</h1>
+              <p className={classes.subText}>
+                Subscribe to our email newsletter today to receive update on the
+                latest news
+              </p>
+
+              <div className={classes.subscribe}>
+                <div className={classes.inputContainer}>
+                  <span className={`material-icons ${classes.icon}`}>
+                    mail_outline
+                  </span>
+                  <input
+                    type="email"
+                    placeholder="Enter your Email"
+                    className={classes.input}
+                  />
+                </div>
+                <PrimaryButton
+                  buttonText="Subscribe"
+                  className={classes.subscribeBtn}
+                />
+              </div>
+            </div>
+
+            <div className={`col-md-6 ${classes.newsImgCol}`}>
+              <Image src={newsimg} className={classes.newsLetterImg} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
