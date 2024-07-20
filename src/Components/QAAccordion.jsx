@@ -1,7 +1,17 @@
 import Accordion from "react-bootstrap/Accordion";
 import classes from "../Components/QAAccordion.module.css";
+import { useState } from "react";
 
 export default function QASection() {
+  const [openItems, setOpenItems] = useState({});
+
+  const toggleItem = (id) => {
+    setOpenItems((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  };
+
   const data = [
     {
       id: 1,
@@ -40,8 +50,26 @@ export default function QASection() {
       {data.map((item) => (
         <Accordion>
           <Accordion.Item eventKey={item.id} className={classes.accItem}>
-            <Accordion.Header className={classes.accHeader}>
+            <Accordion.Header
+              className={classes.accHeader}
+              onClick={() => toggleItem(item.id)}
+            >
               {item.question}
+              <span className={classes.icon}>
+                {openItems[item.id] ? (
+                  <span
+                    className={`material-symbols-outlined ${classes.buttonIcon}`}
+                  >
+                    close
+                  </span>
+                ) : (
+                  <span
+                    className={`material-symbols-outlined ${classes.buttonIcon}`}
+                  >
+                    line_end_arrow
+                  </span>
+                )}
+              </span>
             </Accordion.Header>
             <Accordion.Body className={classes.accBody}>
               {item.answer}

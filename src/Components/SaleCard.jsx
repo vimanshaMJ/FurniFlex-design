@@ -11,13 +11,11 @@ export default function SaleCard() {
       id: 1,
       image: sale2,
       title: "Rustic Coffee Table",
-      image: sale2,
     },
     {
       id: 2,
       image: sale3,
       title: "Modern Bookshelf",
-      image: sale3,
     },
   ];
 

@@ -8,12 +8,26 @@
   margin: 1% 0;
   border-radius: 10px !important;
 }
-
-.accHeader {
-  border: none;
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  width: 75px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(115, 114, 114);
+  position: absolute;
+  right: 25px;
+  top: 25px;
 }
 
 .accHeader button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
   font-size: 1.5rem;
   font-weight: 500;
   padding: 3.5% 3%;
@@ -30,6 +44,9 @@
 .accHeader button:focus {
   border-bottom-right-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
+}
+.accHeader button::after {
+  content: none;
 }
 
 .accBody {
