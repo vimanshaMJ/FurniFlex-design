@@ -25,7 +25,12 @@ import CommentsSlider from "../Components/CommentsSlider";
 import PostCard from "../Components/PostCard";
 import QASection from "../Components/QAAccordion";
 import newsimg from "../Images/newsimg.png";
-import { Input, TextField } from "@mui/material";
+import logo2 from "../Images/logo2.png";
+
+import instagram from "../Images/instagram2.png";
+import twitter from "../Images/twitter2.png";
+import facebook from "../Images/facebook2.png";
+import cardsImg from "../Images/cards.png";
 
 const HomePage = ({ products }) => {
   return (
@@ -453,6 +458,83 @@ const HomePage = ({ products }) => {
 
             <div className={`col-md-6 ${classes.newsImgCol}`}>
               <Image src={newsimg} className={classes.newsLetterImg} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr className={classes.hrLine} />
+      {/* Logo section */}
+      <div className={classes.logoSection}>
+        <div className="container">
+          <div className={`row ${classes.logoRow}`}>
+            <div className={`col-4 ${classes.logoCol}`}>
+              <h1 className={classes.logoText}>
+                <span style={{ display: "flex", alignItems: "center" }}>
+                  <Image src={logo2} className={classes.logoImg} />
+                </span>
+                FurniFlex<span className={classes.logoSpan}>.</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr className={classes.hrLine} />
+
+      {/* Footer */}
+      <div className={classes.footerSection}>
+        <div className="container">
+          <div className={`row ${classes.footerRow}`}>
+            <div className={`col-md-2 ${classes.footerCol}`}>
+              <p className={classes.footerTitle}>About</p>
+              <p className={classes.footerText}>Our Company </p>
+              <p className={classes.footerText}>Our Story</p>
+              <p className={classes.footerText}>Blogs</p>
+            </div>
+
+            <div className={`col-md-2 ${classes.footerCol}`}>
+              <p className={classes.footerTitle}>Information</p>
+              <p className={classes.footerText}>Delivery Information</p>
+              <p className={classes.footerText}>Privacy Policy</p>
+              <p className={classes.footerText}>Terms & Conditions</p>
+              <p className={classes.footerText}>Returns</p>
+            </div>
+
+            <div className={`col-md-2 ${classes.footerCol}`}>
+              <p className={classes.footerTitle}>Support</p>
+              <p className={classes.footerText}>Contsct Us</p>
+              <p className={classes.footerText}>Help</p>
+              <p className={classes.footerText}>FAQ</p>
+              <p className={classes.footerText}>Checkout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Copy right section */}
+      <div className={classes.copyRightSection}>
+        <div className="container">
+          <div className={`row ${classes.copyRightRow}`}>
+            <div className={`col-md-6 ${classes.copyRightCol}`}>
+              <p className={classes.copyRightText}>
+                Copyright@2024 FurniFlex. All Rights Reserved.
+              </p>
+            </div>
+
+            <div className={`col-md-3 ${classes.copyRightCol}`}>
+              <Link to="https://www.instagram.com/">
+                <Image src={instagram} className={classes.socielIcon} />
+              </Link>
+              <Link to="https://www.twitter.com/">
+                <Image src={twitter} className={classes.socielIcon} />
+              </Link>
+              <Link to="https://www.facebook.com/">
+                <Image src={facebook} className={classes.socielIcon} />
+              </Link>
+            </div>
+
+            <div className={`col-md-3 ${classes.cardsCol}`}>
+              <Image src={cardsImg} className={classes.cardsImg} />
             </div>
           </div>
         </div>
