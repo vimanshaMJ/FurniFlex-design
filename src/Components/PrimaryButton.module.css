@@ -1,0 +1,24 @@
+.primaryButton {
+  display: flex;
+  width: fit-content;
+  background-color: #d09423;
+  color: white;
+  border: none;
+  padding: 27px 37px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+.primaryButton:hover {
+  background-color: transparent;
+  border: #d09423 solid 2px;
+  color: white;
+}
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}

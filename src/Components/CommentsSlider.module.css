@@ -1,0 +1,70 @@
+.commentsHeading {
+  padding-right: 66%;
+  margin: 5% 0;
+}
+.comments {
+  padding: 0 1%;
+}
+.commentContainer {
+  position: relative;
+  background-color: #2d5356;
+  border-radius: 30px;
+  width: 98%;
+  padding: 2% 0.8%;
+  margin: 0 35%;
+}
+
+.img {
+  height: fit-content;
+  width: 100%;
+  border-radius: 30px;
+}
+.clientText {
+  padding: 15% 12% 0 2%;
+  color: white;
+  font-size: 1.1rem;
+}
+hr {
+  border: 0;
+  height: 4px !important;
+  background: #5e8d91;
+  margin: 25px 0;
+}
+.clientName {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.clientAddress {
+  font-weight: 300;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  position: absolute;
+  top: -130px;
+}
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+.next {
+  right: 0%;
+  background-color: #daa520;
+  color: white;
+}
+
+.prev {
+  right: 7%;
+  background-color: transparent;
+  border: rgb(208, 207, 207) 1px solid;
+  color: #daa520;
+}

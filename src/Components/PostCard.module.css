@@ -1,0 +1,17 @@
+.postCard {
+  border: none;
+}
+.postImg {
+  border-radius: 20px;
+}
+
+.cardText {
+  color: grey;
+  font-weight: 500;
+}
+.author {
+  color: rgb(80, 80, 80);
+}
+.date {
+  color: #d09423;
+}

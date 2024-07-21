@@ -1,0 +1,76 @@
+.topNavbarContainer {
+  position: static;
+  display: flex;
+  align-items: center;
+  background-color: #d09423;
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+.topRow {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.firstCol {
+  display: flex;
+  align-items: center;
+}
+.imagesRow {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 0 5px;
+}
+.text1 {
+  margin: 0;
+}
+.text2 {
+  display: flex;
+  margin: 0;
+  justify-content: right;
+  align-items: center;
+}
+.phoneIcon {
+  margin: 0 5px;
+}
+.socielIcon {
+  display: inline-flex;
+  width: 40px;
+  padding: 8px;
+  background-color: transparent;
+  border: #d2b783 1px solid;
+  border-radius: 50px;
+  margin: 0 5px;
+}
+.socielIcon:hover {
+  border: #d2b783;
+  padding: 4px;
+}
+
+Image {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.followUp {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .imagesRow {
+    display: inline;
+  }
+  .firstCol {
+    display: inline;
+  }
+  .text2 {
+    justify-content: center;
+  }
+}
